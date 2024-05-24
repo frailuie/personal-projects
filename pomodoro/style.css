@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 100vh;
+  overflow-y: hidden;
+  background: linear-gradient(
+    217deg,
+    rgba(245, 175, 205, 1) 0%,
+    rgba(198, 214, 233, 1) 100%
+  );
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.253);
+  margin: 6%;
+  padding: 90px;
+  width: 90vw;
+  box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.container h1,
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.container h1 {
+  font-weight: 100;
+  font-size: 3.5rem;
+  letter-spacing: 0.1ch;
+}
+
+.removeOpacity {
+  padding: 2px;
+  opacity: 100%;
+  transition: 0.8s ease-in;
+  transform: scale(1.3);
+}
+
+.removeOpacity:hover {
+  transition: 2.3s;
+  transform: scale(1.25) rotate(-360deg);
+}
+
+.opacity {
+  opacity: 25%;
+}
+
+#timer {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 20px;
+  color: #3f3f3f;
+  border-radius: 18px;
+  background-color: rgba(255, 254, 254, 0.472);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.container button {
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #353937c8;
+  color: #f8f8f8;
+  border: 0.4px solid black;
+  border-radius: 8px;
+  padding: 8px 30px;
+  margin: 9px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-info {
+  background-color: rgba(242, 239, 239, 0.937);
+  color: #232323;
+  transition: 2s ease-in;
+  padding: 50px;
+  width: 75vw;
+  margin: 10% 15% 15% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#break-timer {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.encouragement {
+  font-weight: 200;
+}
+
+#end-break {
+  width: 150px;
+  font-weight: 300;
+}
+
+#end-break:hover {
+  background-color: rgb(214, 54, 54);
+  color: #fafafa;
+  transition: 0.5s ease;
+}
+
+.modal.display {
+  display: block;
+  transition: 2s ease-in;
+}
