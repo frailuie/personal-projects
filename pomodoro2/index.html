@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="timer.png" type="image/png" />
+    <title>pomodoro timer ver 2.0 | frailuie</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <button id="start-btn">start</button>
+        <button id="pause-btn">pause</button>
+
+        <button id="reset-btn">reset</button>
+      </div>
+      <div class="tomatoes">
+        <span class="tomato opacity" id="tomato1">🍅</span>
+        <span class="tomato opacity" id="tomato2">🍅</span>
+        <span class="tomato opacity" id="tomato3">🍅</span>
+        <span class="tomato opacity" id="tomato4">🍅</span>
+      </div>
+
+      <div id="timer">60:00</div>
+
+      <div class="modal">
+        <div class="modal-info">
+          <p id="break-timer"></p>
+          <h2 class="msg">Enjoy your break 😊</h2>
+          <button id="break-btn">end break</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.0/dist/howler.min.js"></script>
+    <script src="lib/easytimer/dist/easytimer.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
