@@ -139,11 +139,13 @@ pause.addEventListener("click", function () {
     clearInterval(intervalId);
     paused = true;
     pause.style.backgroundColor = "#6161b5";
+    pause.style.color = "#ededf9";
   } else {
     // clicked again? do this
     intervalId = setInterval(updateTimer, 1000);
     paused = false;
-    pause.style.backgroundColor = "#353937c8";
+    pause.style.color = "#232323"
+    pause.style.backgroundColor = "transparent";
   }
 });
 
