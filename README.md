@@ -4,6 +4,7 @@
 > i was using a pomodoro app for a few days and i really liked it but i wasn't able to change the timer's value without paying an annual fee so i made my own!
 
  it doesn't have many features (it's just a **timer** at the end of the day) but it has a break timer and after every session, a sound and a grown <a href="https://frailuie.github.io/personal-projects/pomodoro/">tomato</a>😊
+ <br>
  **ver 2.0** <a href="https://frailuie.github.io/personal-projects/pomodoro2">woo! 💪</a> i fixed the timer issue (kinda) and the layout looks much nicer~
 
  
