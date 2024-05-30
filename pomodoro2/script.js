@@ -29,7 +29,7 @@ let intervalId = null;
 let timerValue = 60 * 60; // 60 minutes
 let paused = false; // initial value
 
-let breakValue = 10 * 60; // 10 minutes
+let breakValue = 25 * 60; // 25 minutes
 let breakIntervalId = null;
 
 function changeColor() {
@@ -76,8 +76,8 @@ function startBreak() {
     // break timer has reached 0:00
     breakSound.play();
     clearInterval(intervalId);
-    breakValue = 5 * 60;
-    breakText.textContent = "10:00";
+    breakValue = 25 * 60;
+    breakText.textContent = "25:00";
 
     supportMsg.textContent = "Well done! 🍅";
   }
@@ -139,13 +139,11 @@ pause.addEventListener("click", function () {
     clearInterval(intervalId);
     paused = true;
     pause.style.backgroundColor = "#6161b5";
-    pause.style.color = "#ededf9";
   } else {
     // clicked again? do this
     intervalId = setInterval(updateTimer, 1000);
     paused = false;
-    pause.style.color = "#232323"
-    pause.style.backgroundColor = "transparent";
+    pause.style.backgroundColor = "#353937c8";
   }
 });
 
@@ -168,7 +166,7 @@ close.addEventListener("click", () => {
   clearInterval(breakIntervalId);
 
   breakValue = 0;
-  breakText.textContent = "10:00";
+  breakText.textContent = "25:00";
   supportMsg.textContent = "Enjoy your break 😊";
 
   // add new session
