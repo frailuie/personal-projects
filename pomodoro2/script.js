@@ -51,6 +51,10 @@ function updateTimer() {
         .toString()
         .padStart(2, "0")}`;
       timerValue--;
+
+      document.title = `${minutes.toString().padStart(2, "0")}:${seconds
+        .toString()
+        .padStart(2, "0")} ⏰`;
     });
   } else {
     // timer has reached 0:00
@@ -81,6 +85,7 @@ function startBreak() {
     clearInterval(intervalId);
     breakValue = 25 * 60;
     breakText.textContent = "25:00";
+    document.title = "pomodoro timer | frailuie 🩷_🩷";
 
     supportMsg.textContent = "Well done! 🍅";
   }
@@ -94,6 +99,7 @@ function displayModal() {
   // reset timer in the background
   timerValue = 60 * 60;
   timerText.textContent = "60:00";
+  document.title = "pomodoro timer | frailuie";
 }
 
 function randomColor() {
@@ -153,6 +159,10 @@ function enterFocusMode() {
       .padStart(2, "0")}`;
 
     focusValue++;
+
+    document.title = `${minutes.toString().padStart(2, "0")}:${seconds
+      .toString()
+      .padStart(2, "0")} ☀️`;
   });
 }
 
@@ -181,6 +191,7 @@ function endFocus() {
   // reset timer in the background
   timerValue = 60 * 60;
   timerText.textContent = "60:00";
+  document.title = "pomodoro timer | frailuie 🩷_🩷";
 
   if (breakValue > 0) {
     requestAnimationFrame(() => {
@@ -191,6 +202,10 @@ function endFocus() {
         .toString()
         .padStart(2, "0")}`;
       breakValue--;
+
+      document.title = `${minutes.toString().padStart(2, "0")}:${seconds
+        .toString()
+        .padStart(2, "0")} 🌴`;
     });
   } else {
     breakSound.play();
@@ -231,6 +246,7 @@ reset.addEventListener("click", function () {
   timerValue = 60 * 60;
   session = 0;
   timerText.textContent = "60:00";
+  document.title = "pomodoro timer | frailuie 🩷_🩷";
 
   for (let i = 4; i > 0; i--) {
     const emoji = document.getElementById(`tomato${i}`);
