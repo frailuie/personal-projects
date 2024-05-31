@@ -97,10 +97,14 @@ function displayModal() {
 }
 
 function randomColor() {
-  const r = Math.floor(Math.random() * (245 - 175) + 175);
-  const g = Math.floor(Math.random() * (245 - 175) + 175);
-  const b = Math.floor(Math.random() * (245 - 175) + 175);
-  return `rgb(${r}, ${g}, ${b})`;
+  const hue = Math.floor(Math.random() * 360);
+  const sat = Math.floor(Math.random() * 0.5) + 0.5;
+  const minLight = 80;
+  const maxLight = 100;
+
+  const light = Math.floor(Math.random() * (maxLight - minLight)) + minLight;
+
+  return `hsl(${hue}, ${sat * 100}%, ${light}%)`;
 }
 
 function updateSession() {
