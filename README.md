@@ -11,8 +11,8 @@
 <img src="https://github.com/frailuie/personal-projects/assets/147780973/7a98a7d5-0e99-4d88-b25d-fdaee4c73d39"/>
 
 
-## beauty calendar
- 
+## project manager
+  <img src="https://github.com/frailuie/personal-projects/assets/147780973/566ce6cb-1096-4662-a90b-656a7a10f359">
 
- > mainly so i can keep track of the dates of beauty treatments (hair) but i also want to add some functionality for other things
+ > another situation where i found an app with similar but limited features so decided to try and make my own version with vanilla javascript
 
