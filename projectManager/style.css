@@ -1,0 +1,344 @@
+/* my fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"); /* "DM Sans" & "Work Sans" & "Manrope" */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  max-height: fit-content;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+  background-image: linear-gradient(
+    385deg,
+    rgb(248, 195, 187),
+    rgb(249, 232, 193),
+    rgb(254, 223, 230),
+    rgb(213, 241, 246)
+  );
+}
+
+/* box containing all elements */
+.container {
+  position: relative;
+  height: fit-content;
+  width: 980px;
+  background-color: rgb(251, 247, 242);
+  padding: 45px 40px;
+  transition: 0.45s ease-out;
+  border-radius: 18px;
+}
+
+/* modal */
+.modal,
+.subModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.168);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.modalContent {
+  background-color: #fefefee8;
+  margin: 3% auto;
+  padding: 3%;
+  border: 1px solid #888;
+  width: 60vw;
+  position: relative;
+}
+
+.modalContent h3 {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+#modalText {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* shake modal */
+.shake {
+  animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5px, 0);
+  }
+  20% {
+    transform: translate(5px, 0);
+  }
+  30% {
+    transform: translate(-5px, 0);
+  }
+  40% {
+    transform: translate(5px, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(-5px, 0);
+  }
+  70% {
+    transform: translate(5px, 0);
+  }
+  80% {
+    transform: translate(-5px, 0);
+  }
+  90% {
+    transform: translate(2.5px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.formBoxes,
+.subFormBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.subFormBoxes {
+  padding: 2px;
+}
+
+.modalContent hr {
+  width: 100%;
+  margin: 20px;
+}
+
+#userInputTask {
+  width: 45%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#userInputSubTask {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#dueDate {
+  font-family: "Work Sans", sans-serif;
+  padding: 4px;
+  text-align: center;
+}
+
+#emojis {
+  font-size: 1.2rem;
+}
+
+.modalContent button {
+  background: transparent;
+  margin-left: 15px;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid rgb(127, 126, 126);
+}
+
+.modalContent button:hover {
+  background-color: #232323;
+  color: rgb(246, 245, 245);
+  transition: ease 0.5s;
+}
+
+/* add main task to list button */
+.bx-list-plus {
+  font-size: 1.5rem;
+}
+
+#close {
+  font-size: 1.9rem;
+  position: absolute;
+  padding: 8px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+#close:hover {
+  color: rgb(241, 240, 240);
+  transition: ease 0.4s;
+}
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: -20px;
+  padding: 10px;
+}
+
+.dateBox h4,
+#dateText {
+  font-family: "Work Sans", sans-serif;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* greeting text with emoji */
+.dateBox h4 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#dateText {
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+.quoteBox h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.35rem;
+  width: 400px;
+  padding: 35px;
+  border: 1px solid #e7e9ef;
+}
+
+.projectContainer {
+  position: relative;
+  padding: 15px;
+  width: 60vw;
+  margin: 5%;
+}
+
+.weekTitle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2px;
+}
+
+.weekTitle h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.weekTitle button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bxs-plus-circle {
+  font-size: 1.4rem;
+  margin-top: 3px;
+  padding-left: 8px;
+}
+
+.toDoTask {
+  margin-top: 15px;
+  height: auto;
+  width: auto;
+}
+
+/* main tasks  */
+ul {
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-family: "Manrope", sans-serif;
+}
+
+ul li li {
+  margin-bottom: 5px;
+}
+
+li {
+  width: auto;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+li button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  float: right;
+  top: 2%;
+  cursor: pointer;
+}
+
+li button:hover {
+  color: rgb(199, 48, 48);
+  transition: ease 0.5s;
+}
+
+li.selected,
+ul.selected,
+#mainTaskList ul li:nth-child(odd).selected {
+  color: rgb(180, 180, 180);
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #616161;
+  padding: 0.9%;
+  border-radius: 10px;
+  background-color: rgba(35, 33, 33, 0.967);
+}
+
+li.selected button {
+  color: rgba(231, 240, 247, 0.967);
+}
+
+li.selected button:hover {
+  color: rgb(241, 111, 111);
+  transition: ease 0.5s;
+}
+
+/* subtasks display */
+#mainTaskList ul {
+  font-size: 1.05rem;
+  text-indent: 2ch;
+  padding: 8px;
+  margin-top: 13px;
+  border-radius: 8px;
+  color: rgb(246, 244, 244);
+  background-color: rgba(78, 245, 167, 0.967);
+}
+
+#mainTaskList ul li {
+  border-radius: 10px;
+  padding: 8px;
+  width: auto;
+}
+
+#mainTaskList ul li:nth-child(odd) {
+  background: #f2f2f2;
+  color: #232323;
+  border-radius: 10px;
+}
+
+#emojiIcon {
+  font-size: 1.75rem;
+}

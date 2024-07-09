@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="pencil.png" type="image/x-icon" />
+    <title>project manager | frailuie</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal" id="taskModal">
+        <div class="modalContent">
+          <span id="close">×</span>
+          <h3 id="modalText">add a task 🖊️</h3>
+
+          <div class="formBoxes">
+            <input
+              required
+              type="text"
+              id="userInputTask"
+              placeholder="enter task here"
+              autocomplete="off"
+            />
+
+            <input type="date" name="dueDate" id="dueDate" />
+
+            <select required name="emojis" id="emojis">
+              <option value="📓" data-type="Study">📓</option>
+              <option value="🎮" data-type="Game">🎮</option>
+              <option value="🎨" data-type="Art">🎨</option>
+              <option value="📂" data-type="Project">📂</option>
+              <option value="👩‍💻" data-type="Practice" selected>👩‍💻</option>
+            </select>
+
+            <button id="saveTask"><i class="bx bx-list-plus"></i></button>
+            <br />
+            <hr />
+            <h3 id="subModalText">add a sub task 👍</h3>
+          </div>
+
+          <div class="subFormBoxes">
+            <input
+              required
+              type="text"
+              id="userInputSubTask"
+              placeholder="enter task here"
+              autocomplete="off"
+            />
+
+            <button id="saveSubTask"><i class="bx bx-list-plus"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="dateBox">
+          <h4>Today ☀️</h4>
+          <h3 id="dateText">Random Date Here</h3>
+        </div>
+        <div class="quoteBox">
+          <h3>"Whether you think you can or think you can’t, you’re right."</h3>
+        </div>
+      </div>
+
+      <div class="projectContainer">
+        <div class="weekTitle">
+          <h5>This week</h5>
+          <button id="addTask"><i class="bx bxs-plus-circle"></i></button>
+        </div>
+        <hr />
+
+        <div class="toDoTask">
+          <ul id="mainTaskList"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
