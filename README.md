@@ -11,7 +11,7 @@
 <img src="https://github.com/frailuie/personal-projects/assets/147780973/7a98a7d5-0e99-4d88-b25d-fdaee4c73d39"/>
 
 
-## project manager
+## <a href="https://frailuie.github.io/personal-projects/projectManager/">project manager</a>
   <img src="https://github.com/frailuie/personal-projects/assets/147780973/566ce6cb-1096-4662-a90b-656a7a10f359">
 
  > another situation where i found an app with similar but limited features so decided to try and make my own version with vanilla javascript
