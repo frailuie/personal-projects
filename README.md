@@ -1,4 +1,4 @@
-# personal projects 🌴
+# projects for me to use🌴
 
 ## pomodoro timer
 > i was using a pomodoro app for a few days and i really liked it but i wasn't able to change the timer's value without paying an annual fee so i made my own!
